@@ -16,5 +16,9 @@ class Birthday < Sinatra::Base
     erb :birthday_result
   end
 
+  get '/no' do
+    erb:no
+  end
+
   run! if app_file == $PROGRAM_NAME
 end

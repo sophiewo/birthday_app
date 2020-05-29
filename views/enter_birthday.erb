@@ -1,22 +1,4 @@
- <style>
-body {background-color: pink;}
-h1   {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: white; text-align: center;}
-h2   {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: white; text-align: center;}
-p    {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: white; text-align: center;}
-label  {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: white; text-align: center;}
 
-input[type=submit] {
-  background-color: red;
-  color: white;
-  padding: 30px 30px;
-  margin: 8px 0;
-  border: 3pt;
-  border-radius: 4px;
-  cursor: pointer;
-  text-align: center;
-  align: center
-}
-</style>
 
 <p> <form action="/birthday-result" method="post"></p> 
 <p> <h1> Enter your name and birthday get started: </h1> </label>
@@ -26,9 +8,10 @@ input[type=submit] {
 <p> <label for="birthday">Birthday:</label> </p>
 <p> <input type="date" id="birthday" name="date"> </p>
 <div>
+<p> Ready to find out some information about your birthday? </p>
 <p> <input type="submit" value="Yes!" /> </p>
 </form>
 
 <p> <form action="/no" method="get"></p> 
-<p> <input type="submit" value="No" /> </p>
+<p> <input type="submit" value="No!" /> </p>
 <p> </form>

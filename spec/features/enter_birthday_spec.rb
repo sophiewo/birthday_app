@@ -15,4 +15,11 @@ feature "/enter_birthday" do
     click_button 'Yes!'
     expect(page).to have_content("Sophie your birthday is on 07/08/1991")
   end
+
+   scenario "Allows user to enter name and their birthday" do
+    visit('/')
+    click_on("Get Started") 
+    click_button 'No!'
+    expect(page).to have_content("Too bad for you!")
+  end
 end
